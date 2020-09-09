@@ -1,0 +1,18 @@
+body {
+    margin: 0;
+    background-color: #A7A9AC;
+    font-family: 'Mulish', sans-serif;
+}
+.header {
+     width: 100%;     /*  Medida relativa */
+     height: 80px;
+     background-color: #005288;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+}
+.header img {
+    width: 400px;
+    /* margin-top: 10px; */
+    margin-left: 10px;
+}
