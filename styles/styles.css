@@ -175,6 +175,8 @@ body {
   }
   
   .footer {
+    padding-top: 200px;
+    align-content: flex-end;
     align-items: center;
     background-color: #005288;
     display: flex;
@@ -235,4 +237,28 @@ body {
   }
   ::-webkit-scrollbar-thumb:hover {
     background: rgba(255, 255, 255, 0.699);
+  }
+
+  .text {
+    text-align: center;
+    margin-top: 56px;
+    color: #fff;
+    font-size: 50px;
+    font-family: sans-serif;
+    text-transform: uppercase;
+  }
+  .animated {
+    animation-duration: 2.5s;
+    animation-fill-mode: both;
+    animation-iteration-count: infinite;
+  }
+  @keyframes rubberBand {
+    0% {transform: scale(1);}
+    30% {transform: scaleX(1.25) scaleY(0.75);}
+    40% {transform: scaleX(0.75) scaleY(1.25);}
+    60% {transform: scaleX(1.15) scaleY(0.85);}
+    100% {transform: scale(1);}
+  }
+  .rubberBand {
+    animation-name: rubberBand;
   }
