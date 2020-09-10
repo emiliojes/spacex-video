@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=4, initial-scale=1.0">
+    <title>404 Pagina encontrada</title>
+</head>
+<style>
+.box {
+  
+}
+.text {
+  text-align: center;
+  margin-top: 56px;
+  color: #fff;
+  font-size: 50px;
+  font-family: sans-serif;
+  text-transform: uppercase;
+}
+.animated {
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+  animation-iteration-count: infinite;
+}
+@keyframes rubberBand {
+  0% {transform: scale(1);}
+  30% {transform: scaleX(1.25) scaleY(0.75);}
+  40% {transform: scaleX(0.75) scaleY(1.25);}
+  60% {transform: scaleX(1.15) scaleY(0.85);}
+  100% {transform: scale(1);}
+}
+.rubberBand {
+  animation-name: rubberBand;
+}
+
+
+.footer {
+    padding-top: 200px;
+    align-content: flex-end;
+    background-color: #005288;
+    display: flex;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .footer a {
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    padding-left: 30px;
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="./assets/1200px-SpaceX_logo_black.svg.png" alt="">
+    </header>
+    <section class="box">
+        <h2 class="text animated rubberBand">404</h2>
+        <h3 class="text animated rubberBand">No podemos encontrar tu pagina</h3>
+    </section>
+    
+
+    <footer class="footer">
+        <a href="/">Terminos de uso</a>
+        <a href="/">Declaración de privacidad</a>
+        <a href="/">Centro de ayuda</a>
+    </footer>
+</body>
+</html>
