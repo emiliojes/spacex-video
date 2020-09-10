@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@400;700&display=swap" rel="stylesheet">
+    <title>Buscador</title>
+</head>
+<style>
+    body {
+        margin: 0;
+        background-color: #A7A9AC;
+        font-family: 'Mulish', sans-serif;
+    }
+    .header {
+         width: 100%;     /*  Medida relativa */
+         height: 80px;
+         background-color: #A7A9AC;
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+    }
+    .header__img {
+        width: 400px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    .header__menu {
+        margin-right: 30px;
+    }
+    .header__menu ul {
+        display: none;
+        list-style: none;
+        padding: 0px;
+        position: absolute;
+        width: 100px;
+        text-align: right;
+        margin: 0px 0px 0px -14px;
+    }
+    .header__menu:hover ul, ul:hover {
+        display: block;
+    }
+    .header__menu li {
+        margin: 10px 0px;
+    }
+    .header__menu li a {
+        color: white;
+        text-decoration: none;
+    }
+    .header__menu li a:hover {
+        text-decoration: underline;
+    }
+    .header__menu--profile {
+        margin-right: 8px;
+        display: flex;
+        align-items: center;
+    }
+    .header__menu--profile img {
+        margin-right: 8px;
+        width: 40px;
+    }
+    .header__menu--profile p {
+        margin: 0px;
+        color:white;
+    }
+    .main {
+        height: 300px;
+    }
+    .main__title {
+        font-size: 25px;
+    }
+    .input {
+        background: rgba(255, 255, 255, 0);
+        border: 2px solid black;
+        border-radius: 50px;
+        color: white;
+        font-family: 'Mulish', sans-serif;
+        font-size: 16px;
+        height: 50px;
+        padding: 0px 20px;
+        width: 70%; /* valor relativo */
+    }
+    ::placeholder {
+        color: white;
+    }
+    input:focus {
+        outline: none;
+        outline-width: 0;
+        box-shadow: none;
+    }
+</style>
+<body>
+    <header class="header">
+        <img class="header__img" src="./1200px-SpaceX_logo_black.svg.png" alt="">
+    <div class="header__menu">
+        <div class="header__menu--profile">
+            <img src="./customer-50.png" alt="">
+            <p>Perfil</p>
+        </div>
+        <ul>
+            <li><a href="/">Cuenta</a></li>
+            <li><a href="/">Cerrar Sesión</a></li>
+        </ul>
+    </div>
+    </header>
+
+    <section class="main">
+        <h2 class="main__title">Que quieres ver hoy?</h2>
+        <input class="input" type="text" placeholder="Buscar...">
+    </section>
+</body>
+</html>
