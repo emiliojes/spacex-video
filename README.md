@@ -1,3 +1,3 @@
-#Pagina de video de SPACEX 
+# Pagina de video de SPACEX 
 
-#Proyecto [Visualizacion](https://emiliojes.github.io/spacex-video/ "Visualizacion del proyecto")
+# Proyecto [Visualizacion](https://emiliojes.github.io/spacex-video/ "Visualizacion del proyecto")
