@@ -13,6 +13,7 @@ body {
   justify-content: space-between;
   top: 0px;
   width: 100%;
+  margin: 0 -25px;
 }
 
 .header__img {
